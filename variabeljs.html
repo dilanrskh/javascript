@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabel Local dan Public</title>
+</head>
+<body>
+
+    <h1>Variabel Local dan Variabel Public</h1>
+    
+    <h2>A. Variabel Local</h2>
+    <p id="kudil"></p>
+
+    <h3>B. Variabel Public</h3>
+    <p id="dila"></p>
+
+    <script>
+
+
+// Variabel adalah sebuah nama yang mewakili sebuah nilai. Variabel bisa diisi dengan berbagai macam nilai seperti string (teks), number (angka), objek, array, dan sebagainya.
+
+// Kita bisa ibaratkan, variabel itu seperti wadah untuk menyimpan sesuatu.
+
+// 1. Variabel Local; tempat nya harus ada didalam kurung 
+// 2. Variabel Public; bisa ditaruh dimana mana
+
+    
+     localVariabel();
+     publicVariabel();
+
+     function localVariabel(){
+
+        var family;
+        family = "Variabel Local nii yuhuuuu";
+
+        console.log (family)
+        document.getElementById ("kudil").innerHTML = family;
+
+     }
+
+     function publicVariabel(){
+        kita = "Nahhhh yang ini baru Variabel Public";
+       
+         console.log (kita)
+        document.getElementById ("dila").innerHTML = kita;
+     } 
+     
+   
+    </script>
+    
+</body>
+</html>
